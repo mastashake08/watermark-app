@@ -12,23 +12,23 @@ export default defineNuxtConfig({
     baseURL: '/watermark-app/', // Replace with your repository name for GitHub Pages
   },
   pwa: {
-    registerType: 'autoUpdate', // Automatically update the service worker
+    registerType: 'autoUpdate',
     manifest: {
       name: 'Nuxt Watermark Creator',
       short_name: 'Watermark',
-      description: 'Create image and text watermarks easily with Nuxt.',
+      description: 'Easily create image and text watermarks.',
       theme_color: '#ffffff',
       background_color: '#ffffff',
       display: 'standalone',
-      start_url: '/watermark-app',
+      start_url: '/nuxt-watermark/', // Align with baseURL
       icons: [
         {
-          src: '/icon-192x192.png',
+          src: '/nuxt-watermark/icon-192x192.png',
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: '/icon-512x512.png',
+          src: '/nuxt-watermark/icon-512x512.png',
           sizes: '512x512',
           type: 'image/png',
         },
