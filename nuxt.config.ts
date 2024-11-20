@@ -20,15 +20,16 @@ export default defineNuxtConfig({
       theme_color: '#ffffff',
       background_color: '#ffffff',
       display: 'standalone',
-      start_url: '/nuxt-watermark/', // Align with baseURL
+      scope:'/watermark-app',
+      start_url: '/watermark-app/', // Align with baseURL
       icons: [
         {
-          src: '/nuxt-watermark/icon-192x192.png',
+          src: '/watermark-app/icon-192x192.png',
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: '/nuxt-watermark/icon-512x512.png',
+          src: '/watermark-app/icon-512x512.png',
           sizes: '512x512',
           type: 'image/png',
         },
